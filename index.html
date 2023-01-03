@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+         <i class="fa fa-bars"></i>
+      
+        </label>
+        <label class="logo">drive</label>
+        <ul>
+            <li><a href="#home" class="active">home</a></li>
+       <li><a href="#">products</a></li>
+       <li><a href="#contact">contact</a></li>
+       <li><a href="#footer">channle</a></li>
+       <li><a href="about">about</a></li>
+       
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>welecome</h1>
+        <p>Voila l image de page home
+        </p>
+        <div>
+
+        <img src="https://www.photoroom.com/img/blur-background/hero-slider-after.png" alt="" class="imgg">
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+        <label for="">nom</label>
+        <input type="text" name="" id=""> <br> <br>
+        <label for="">email</label>
+        <input type="email" name="" id=""> <br> <br>
+        <button>envoyer</button>
+        <button>annuler</button>
+    </div>
+    </section>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://www.photoroom.com/img/blur-background/hero-slider-after.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://www.photoroom.com/img/blur-background/hero-slider-after.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://www.photoroom.com/img/blur-background/hero-slider-after.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://www.photoroom.com/img/blur-background/hero-slider-after.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<section class="footer" id="footer">
+    <footer >
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3">about</div>
+            <div class="col-3">about</div>
+            <div class="col-3">about</div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3">about</div>
+            <div class="col-3">about</div>
+            <div class="col-3">about</div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3">about</div>
+            <div class="col-3">about</div>
+            <div class="col-3">about</div>
+        </div>
+        <div style="text-align: center;">tous droits sont conserve</div>
+    </footer>
+</section>
+
+<div id="scrollUp">
+    <a href="#top"><img src="to_top.png"/></a>
+    </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script>
+     
+jQuery(function(){
+    $(function () {
+        $(window).scroll(function () { //Fonction appelée quand on descend la page
+            if ($(this).scrollTop() > 200 ) {  // Quand on est à 200pixels du haut de page,
+                $('#scrollUp').css('right','10px'); // Replace à 10pixels de la droite l'image
+            } else { 
+                $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
+            }
+        });
+    });
+});
+ 
+</script>
+</body>
+</html>
